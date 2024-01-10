@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -18,7 +24,7 @@
             <button><i class="fas fa-search"></i></button>
         </form>
         <!-- Lugar para texto -->
-        <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito </p>
+        <p class="pagar"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito </p>
         <!-- Navbar -->
         <nav>
             <ul>
@@ -34,6 +40,11 @@
                 <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
             </ul>
 
+            <div class="container">
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
             
         </nav>
     </header>
@@ -110,12 +121,23 @@
 
     <footer>
 
-        <p><strong>Pagá con tarjeta o en efectivo</strong></p>
-        <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        <p><strong>Envío gratis desde $2.500</strong></p>
-        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        <p><strong>Seguridad, de principio a fin</strong> - </p>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        <div>
+            <i class="fas fa-credit-card" id="icono"></i>
+            <p><strong>Pagá con tarjeta o en efectivo</strong></p>
+            <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+            
+        <div>
+            <i class="fas fa-gift" id="icono"></i>
+            <p><strong>Envío gratis desde $2.500</strong></p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div>
+            <i class="fas fa-user-shield" id="icono"></i>
+            <p><strong>Seguridad, de principio a fin</strong></p>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </div>
+        
         <p><small>Copyright © 1999-2020 MercadoLiebre S.R.L.</small></p>
 
     </footer>
