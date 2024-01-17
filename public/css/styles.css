@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
 body{
     background-color: #666;
+    
 }
 
 
@@ -14,7 +16,13 @@ body{
     background-color: #EAC926;
     margin: 0; 
     padding: 0; 
+    display: inline-block;
+    width: 100vh;
     
+}
+.promo{
+    width: 100vh;
+    height: auto;
 }
 
 .pagar{
@@ -41,6 +49,21 @@ body{
 }
 
 
+main{
+    width: 90%;
+    height: auto;
+}
+
+section article{
+    background-color: #ffffff;
+
+
+}
+
+
+section article img{
+    width: 100%;
+}
 
 .titulares{
     font-size: 24px;
@@ -50,11 +73,15 @@ body{
     margin: 20px;
 }
 
+#logo{
+    display: inline;
+}
 #banner{
     
-    width: 300px; 
+    width: 250px; 
     height: auto; 
     margin: 10px;
+    
 }
 
 .precios{
@@ -63,6 +90,7 @@ body{
 
 .descuento{
     font-size: 16px;
+    text-align: left;
 }
 
 .descripcion{
@@ -71,6 +99,7 @@ body{
 
 footer{
     background-color: #ebebeb;
+    width: 100vh;
 }
 
 footer div p{
@@ -80,7 +109,7 @@ footer div p{
 
 #icono{
     font-size: 3em; 
-    color: #1259c3;
+    color: #1259C3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,3 +122,22 @@ footer div p{
     left: 0;
     margin: 10px;
 }
+
+
+
+/* Medias queries */
+/* Tablets */
+@media ( min-width: 768px ){
+    body{
+        background-size: contain;
+      
+    }
+}
+/* Laptops */
+
+@media ( min-width: 1024px ){
+    body{
+        background-size: 100vw;
+    }
+}
+
