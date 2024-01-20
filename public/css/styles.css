@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #666;
+    background-color: #ebebeb;;
     font-family: 'Roboto', sans-serif;
 }
 /* Estilos para la barra de navegacion*/
@@ -17,6 +17,7 @@ body {
 }
 
 .copy-header{
+    
     font-weight: 400;
     text-align: center;
     margin: 20px 0;
@@ -107,11 +108,11 @@ article {
     padding: 20px;
 }
 
-section h2{
-    
-    text-align: left; 
-    margin-bottom: 10px;
-    border: dotted 2px red;
+main h2{
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 35px;
 }
 
 /* Estilos para la imagen dentro del artículo */
@@ -124,7 +125,12 @@ article img {
 /* Estilos específicos para el ícono de envío y precios */
 article i {
     margin-right: 5px;
-    color: #39b54a; /* Color azul similar al de los enlaces en Mercado Libre */
+    color: #39b54a; 
+    width: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
+    border-radius: 50%;
+    background-color: #fff; 
+    border: 2px solid #39b54a; 
 }
 
 article .precios {
@@ -139,14 +145,28 @@ article .descuento {
 
 article h3 {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0;
+    
 }
 
 
 
+footer{
+    background-color: #ffff;
+}
 
+footer div{
+    text-align: center;
+    padding: 35px;
+    color: #666;
+}
 
+footer div i{
+    color: #1259c3;
+    font-size: 30px;
+    
+}
 
 
 
