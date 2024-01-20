@@ -301,7 +301,7 @@ footer div i{
     /* Estilos para el footer*/
   
     
-    footer{
+    .footer-text{
         display: flex;
     }
     
