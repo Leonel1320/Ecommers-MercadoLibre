@@ -97,6 +97,7 @@ section {
     text-align: left;
 }
 
+
 /* Estilos para cada artículo */
 article {
     background-color: #fff;
@@ -124,15 +125,23 @@ article img {
 
 /* Estilos específicos para el ícono de envío y precios */
 article i {
+    display: block;
     margin-right: 5px;
     color: #39b54a; 
     width: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
     height: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
     border-radius: 50%;
     background-color: #fff; 
-    border: 2px solid #39b54a; 
+    border: 1px solid #39b54a; 
+    padding: 7px;
+   
+    
+    
 }
-
+article p{
+    display: inline;
+    margin-right: 30px;
+}
 article .precios {
     font-size: 18px;
     font-weight: normal;
@@ -179,6 +188,17 @@ footer div i{
     body {
         background-size: contain;
     }
+    .logo{
+        width: 150px;
+
+    }
+    .form-search{
+        display: flex;
+    }
+    .form-search input{
+        width: 300px;
+    }
+   
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
@@ -186,10 +206,12 @@ footer div i{
     .copy-header{
         max-width: 250px;
         text-align: right;
+        font-size: 15px;
     }
     .hamburguer-button{
         display: none;
     }
+
     .main-navbar{
        
         display: flex;
@@ -202,6 +224,23 @@ footer div i{
         margin: 0 5px; 
          
     }
+    /* Estilos para el main*/
+    section{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+
+    }
+    section article{
+        width: 45%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+
+    
     
 }
 
@@ -234,5 +273,41 @@ footer div i{
         max-width: none;
         text-align: right;
     }
+
+    /*estilos para el main*/
+    section article img{
+        width: 90%;
+        height: auto;
+        border: dotted 2px red;
+    }
+    section{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+
+    }
+    section article{
+        width: 20%;
+        height: 350px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    section article h3{
+        margin-top: 20px; 
+    }
+    /* Estilos para el footer*/
+  
+    
+    footer{
+        display: flex;
+    }
+    
+    
+
+    
+    
 }
 
