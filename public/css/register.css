@@ -79,93 +79,87 @@ body {
     margin: 20px;
 }
 
-/* Estilos para el main*/
-
-
-.promo{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-section{
-    width: 80%;
-    padding: 5px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-/* Estilos para cada artículo */
-article {
+/* estilos para el main */
+.registro {
     background-color: #fff;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 5px;
+    width: 90%; /* Ancho ajustado para pantallas pequeñas */
+    text-align: center;
+    margin: auto; /* Centra horizontalmente el formulario */
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-
-
-main h2{
-    color: #666;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin: 35px;
+.registro h2 {
+    color: #007bff; /* Color azul */
 }
 
-/* Estilos para la imagen dentro del artículo */
-article img {
-    width: 90%;
-    height: auto;
-}
-
-
-/* Estilos específicos para el ícono de envío y precios */
-article i {
+.registro label {
     display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    text-align: left;
+}
+
+.registro input,
+.registro select,
+.registro button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.registro input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.registro input[type="checkbox"] {
+    margin-bottom: 5px;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opciones label {
+    flex-basis: 48%; /* Ajusta el ancho de las opciones según sea necesario */
+    margin: 5px;
+    padding: 10px;
+    background-color: #f4f4f4; /* Color de fondo */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.opciones label:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.opciones input {
     margin-right: 5px;
-    color: #39b54a; 
-    width: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
-    height: 35px; /* Ajusta el tamaño del círculo según tus necesidades */
-    border-radius: 50%;
-    background-color: #fff; 
-    border: 1px solid #39b54a; 
-    padding: 7px;
-   
-    
-    
 }
-article p{
-    display: inline;
-    margin-right: 30px;
-}
-article .precios {
-    font-size: 18px;
-    font-weight: normal;
-    color: #222;
+.registro button {
+    background-color: #007bff; /* Color azul */
+    color: #fff;
+    padding: 12px 20px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-article .descuento {
-    color: #39b54a; /* Color rojo similar al de los descuentos en Mercado Libre */
+.registro button:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
 }
 
-article h3 {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    
-}
+
 
 
 
@@ -184,7 +178,6 @@ footer div i{
     font-size: 30px;
     
 }
-
 
 
 
@@ -232,25 +225,11 @@ footer div i{
         margin: 0 5px; 
          
     }
-    /* Estilos para el main*/
-    section{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 10px 30px;
-        margin-bottom: 20px;
 
-    }
-    section article{
-        width: 45%;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
-    
+ 
 
-    
-    
 }
+
 
 /* Laptops */
 @media (min-width: 1024px) {
@@ -281,49 +260,30 @@ footer div i{
         max-width: none;
         text-align: right;
     }
-
-    /*estilos para el main*/
-    section article img{
-        width: 90%;
-        height: auto;
-        border: dotted 2px red;
+    
+    .registro{
+        width: 50%;
     }
-    section{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 10px 30px;
-        margin-bottom: 20px;
 
-    }
-    section article{
-        width: 20%;
-        height: 350px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    .delete-button {
+        background-color: #e74c3c; /* Color rojo */
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
     
-    section article h3{
-        margin-top: 20px; 
+    .delete-button:hover {
+        background-color: #c0392b; /* Color rojo más oscuro al pasar el cursor */
     }
-
-    article:hover{
-        box-shadow: 2px 4px 43px -3px rgba(186,185,185,0.75);
-        -webkit-box-shadow: 2px 4px 43px -3px rgba(186,185,185,0.75);
-        -moz-box-shadow: 2px 4px 43px -3px rgba(186,185,185,0.75);
-        scale: 1.02;
-    }
-
-    /* Estilos para el footer*/
-  
     
+
+
     .footer-text{
         display: flex;
     }
     
-    
 
-    
-    
+
 }
-
