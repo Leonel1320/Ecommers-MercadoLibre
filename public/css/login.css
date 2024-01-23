@@ -229,11 +229,19 @@ footer div i{
         text-align: right;
     }
     
-    
+    .submit-button:hover {
+        background-color: #0022AA;
+    }
 
 
     .footer-text{
         display: flex;
+    }
+
+
+    #icono:hover{
+        color: #00A859;
+        font-size: 40px;
     }
     
 
