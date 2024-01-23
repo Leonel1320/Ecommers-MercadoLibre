@@ -141,7 +141,7 @@ footer div{
     color: #666;
 }
 
-footer div i{
+#icono{
     color: #1259c3;
     font-size: 30px;
     
@@ -238,7 +238,9 @@ footer div i{
         display: flex;
     }
 
-
+    #icono{
+        font-size: 30px;
+    }
     #icono:hover{
         color: #00A859;
         font-size: 40px;

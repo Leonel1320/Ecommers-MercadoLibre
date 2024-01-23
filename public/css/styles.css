@@ -350,6 +350,14 @@ footer div i{
         display: flex;
     }
     
+    #icono{
+        font-size: 30px;
+    }
+
+    #icono:hover{
+        color: #00A859;
+        font-size: 40px;
+    }
     
 
     
